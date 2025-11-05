@@ -110,7 +110,6 @@ function buildResponsePayload(original, text, askForSentence = true) {
  */
 app.post("/mastra/agent", async (req, res) => {
   try {
-    //https://boltless-isa-gnatlike.ngrok-free.dev/mastra/agent
     const body = req.body || {};
     // Telex sends a variety of shapes; commonly you'll find:
     //   body?.channel?.id or body?.channelId or body?.address
